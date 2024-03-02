@@ -1,7 +1,7 @@
 # zithara-assign
 
 in backend folder npm packages required are:
-cors handling errors in browser
-express
-nodemon for continuous compiling
-pg for postgresql
+1. cors handling errors in browser
+2. express
+3. nodemon for continuous compiling
+4. pg for postgresql
