@@ -1,0 +1,109 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  color: #5322d0;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.search-box {
+  padding: 1rem;
+  width: 30vw;
+  border: 1px solid #300292;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.search-bar.clicked .search-box {
+  width: 70vw;
+  transform: translateX(0vw);
+}
+
+.search-box:hover {
+  border-color: #6659e2;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #8735e5;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+th,
+td {
+  padding: 1rem;
+  text-align: left;
+}
+
+th {
+  background-color: #5229b9;
+  color: #fff;
+  font-weight: bold;
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
+
+.pagination li {
+  margin: 0 5px;
+}
+
+.pagination button {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #5229b9;
+  color: #fff;
+  border: 1px solid #5229b9;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+}
+
+.pagination button:hover {
+  background-color: #4658cc;
+  border-color: #5229b9;
+}
+
+.pagination .active button {
+  background-color: #25077ff6;
+  border-color: #5229b9;
+}
+
+@media (max-width: 768px) {
+  table {
+    font-size: 0.8rem;
+  }
+
+  th,
+  td {
+    padding: 0.8rem;
+  }
+
+  .search-box {
+    width: 30vw;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+}
