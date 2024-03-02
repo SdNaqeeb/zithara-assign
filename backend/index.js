@@ -1,13 +1,12 @@
 const express = require("express");
-const pool = require("./db"); // Assuming db.js holds the connection pool
+const pool = require("./db");
 const cors = require("cors");
 const { faker } = require("@faker-js/faker");
 const app = express();
 
 app.use(cors());
-// ... (middleware setup, including cors if needed)
 app.use(express.json());
-// ... (API Endpoints)
+
 app.get("/seed", async (req, res) => {
   try {
     for (let i = 1; i <= 50; i++) {
